@@ -30,7 +30,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -49,7 +49,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -68,7 +68,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -87,7 +87,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -106,7 +106,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -125,7 +125,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -144,7 +144,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -163,7 +163,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -182,7 +182,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -201,7 +201,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -220,7 +220,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -239,7 +239,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -258,7 +258,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -277,7 +277,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -296,7 +296,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -315,7 +315,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -334,7 +334,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -353,7 +353,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -372,7 +372,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -391,7 +391,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -410,7 +410,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -429,7 +429,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -448,7 +448,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -467,7 +467,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -486,7 +486,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -505,7 +505,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -524,7 +524,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -543,7 +543,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -562,7 +562,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -581,7 +581,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -600,7 +600,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -619,7 +619,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -638,7 +638,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -657,7 +657,7 @@ export default class Messenger extends Component {
                 <div
                   className="user-img"
                   style={{
-                    background: 'url("/resources/user-img.jpg")',
+                    background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                     backgroundPosition: "center center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",

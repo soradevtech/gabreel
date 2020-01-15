@@ -243,7 +243,7 @@ var Posts = function (_Component) {
               _react2.default.createElement("div", {
                 className: "" + (post.type == "text" ? "story" : "image"),
                 style: {
-                  background: 'url("/resources/inspiration.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/inspiration.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -801,7 +801,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -827,7 +827,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -853,7 +853,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -879,7 +879,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -905,7 +905,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -931,7 +931,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -957,7 +957,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -983,7 +983,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1009,7 +1009,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1035,7 +1035,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1061,7 +1061,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1087,7 +1087,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1113,7 +1113,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1139,7 +1139,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1165,7 +1165,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1191,7 +1191,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1217,7 +1217,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1243,7 +1243,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1269,7 +1269,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1295,7 +1295,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1321,7 +1321,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1347,7 +1347,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1373,7 +1373,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1399,7 +1399,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1425,7 +1425,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1451,7 +1451,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1477,7 +1477,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1503,7 +1503,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1529,7 +1529,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1555,7 +1555,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1581,7 +1581,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1607,7 +1607,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1633,7 +1633,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
@@ -1659,7 +1659,7 @@ var Messenger = function (_Component) {
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
-                  background: 'url("/resources/user-img.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",

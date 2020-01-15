@@ -36,7 +36,7 @@ export default class Posts extends Component {
               <div
                 className={`${post.type == "text" ? "story" : "image"}`}
                 style={{
-                  background: 'url("/resources/inspiration.jpg")',
+                  background: 'url("https://images.tre-marshall.com/gabreel/inspiration.jpg")',
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
