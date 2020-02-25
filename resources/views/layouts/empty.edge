@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+{{--
+  This page is the backbone for all minimal pages, and includes the links to the JavaScript,
+  as well as the head metadata.  
+--}}
 <head>
   <meta charset="UTF-8" />
   <title>
-    @section('title')
+    {{--  This is where the title is declared based on the info from related templates.  --}}
+    @section('title') 
     @endsection
   </title>
   <link rel="stylesheet" href="/css/main.css">
