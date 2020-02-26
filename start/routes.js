@@ -14,10 +14,11 @@
 */
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
-const Route = use('Route')
+const Route = use('Route') // Class that enables routing functionality
 
 // Route.on('/').render('pages/home')
-Route.get('/', 'PageController.home')
+// Homepage is at the root. Will redirect to welcome page if user is not logged in.
+Route.get('/', 'PageController.home') 
 
 // Authentication
 Route.get('/register', 'AuthController.register')

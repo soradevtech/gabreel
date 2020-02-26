@@ -1,10 +1,11 @@
 'use strict'
 
-const { validate } = use('Validator')
-const Hash = use('Hash')
-const User = use('App/Models/User')
+const { validate } = use('Validator') // Used to validate the form
+const Hash = use('Hash') // Used to hash password input. Hashed values cannot be decrypted.
+const User = use('App/Models/User') // Bringing in the User Model table data for the relevant user. 
 
 class AuthController {
+    // Directs user to the registration page
     async register({response, request, view}) {
         return view.render('auth/register')
     }
@@ -47,6 +48,7 @@ class AuthController {
                         return response.redirect('back')
                     }
                     
+                    // Store a flash success notification and redirect to the homepage.
                     session.flash({notification: 'Welcome to GabReel'})
                     return response.redirect('/')
                 }                
@@ -60,14 +62,17 @@ class AuthController {
                 .flashExcept(['password'])
 
             return response.redirect('back')
-            return `passwords don't match`
+            // return `passwords don't match`
         }
 
         
     }
+
+    // Direct user to the login page
     async login({response, request, view}) {
         return view.render('auth/login')
     }
+    
     async loginUser({response, request, view, auth, session}) {
         // Capture the data from the form
         const postData = request.post()
@@ -82,6 +87,7 @@ class AuthController {
             if(passwordVerified) {
                 // Login the user
                 await auth.login(user)
+                // Flash message to be displayed if the user is successfully logged in
                 session.flash({notification: 'Welcome to GabReel'})
                 return response.redirect('/')
             } else {
@@ -107,10 +113,12 @@ class AuthController {
 
     }
 
+    // Direct user to password recovery page
     async forgotPassword({response, request, view}) {
         return view.render('auth/forgotPassword')
     }
 
+    // Direct user to root when logging out
     async logout({response, request, view, auth}) {
         try {
             await auth.logout()
