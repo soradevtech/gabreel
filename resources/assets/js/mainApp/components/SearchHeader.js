@@ -5,12 +5,14 @@ export default class SearchHeader extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
   }
   clickedBtn = () => {
-    console.log("swag");
+    console.log("clicked!");
   };
+
+  // Simple component for the search bar and notifications in the header area
   render() {
     return (
       <div className="search-header">

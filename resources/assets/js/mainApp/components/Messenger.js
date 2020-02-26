@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
+// This component is not yet complete. The JSX is a placeholder for what will
+// be more dynamic in future updates.
 export default class Messenger extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
   }
   clickedBtn = () => {
-    console.log("swag");
+    console.log("clicked!");
   };
   render() {
     return (

@@ -5,11 +5,11 @@ export default class Posts extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
   }
   clickedBtn = () => {
-    console.log("swag");
+    console.log("clicked!");
   };
   showLatestPosts = () => {
     if (this.props.initialData.latestPosts != undefined) {

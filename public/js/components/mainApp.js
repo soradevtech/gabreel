@@ -200,7 +200,7 @@ var Posts = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (Posts.__proto__ || Object.getPrototypeOf(Posts)).call(this));
 
     _this.clickedBtn = function () {
-      console.log("swag");
+      console.log("clicked!");
     };
 
     _this.showLatestPosts = function () {
@@ -320,7 +320,7 @@ var Posts = function (_Component) {
     };
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
@@ -392,6 +392,7 @@ var _Posts2 = _interopRequireDefault(_Posts);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// The main component for the Home Page
 var Home = function (_Component) {
   (0, _inherits3.default)(Home, _Component);
 
@@ -401,11 +402,11 @@ var Home = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
 
     _this.clickedBtn = function () {
-      console.log("swag");
+      console.log("clicked!");
     };
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
@@ -416,6 +417,8 @@ var Home = function (_Component) {
       var _this2 = this;
 
       this.setState({
+        // Passing value of initialData from props into this component's state
+        // Is this simply overwriting the main component's state??
         initialData: this.props.initialData
       }, function () {
         console.log(_this2.props);
@@ -650,6 +653,12 @@ var LoadingComp = function (_Component) {
     return _this;
   }
 
+  // This component is the element that displays while the app is loading.
+  // It will be active until initialData does not have a value of "loading".
+  // Any other value in initialData will remove the "active" class from 
+  // this component.
+
+
   (0, _createClass3.default)(LoadingComp, [{
     key: "render",
     value: function render() {
@@ -746,6 +755,8 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// This component is not yet complete. The JSX is a placeholder for what will
+// be more dynamic in future updates.
 var Messenger = function (_Component) {
   (0, _inherits3.default)(Messenger, _Component);
 
@@ -755,11 +766,11 @@ var Messenger = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (Messenger.__proto__ || Object.getPrototypeOf(Messenger)).call(this));
 
     _this.clickedBtn = function () {
-      console.log("swag");
+      console.log("clicked!");
     };
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
@@ -1765,14 +1776,22 @@ var Profile = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (Profile.__proto__ || Object.getPrototypeOf(Profile)).call(this));
 
     _this.followUser = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
-      var _this$props$routeProp, match, location, history, self, userProfile, _userProfile;
+      var _this$props$routeProp, match, location, history, self, followSwitch, _followSwitch;
 
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
+              // Grab the route props passed down from React Router routeProps property
               _this$props$routeProp = _this.props.routeProps, match = _this$props$routeProp.match, location = _this$props$routeProp.location, history = _this$props$routeProp.history;
+
+              // Put a reference to this entire class into a variable
+
               self = _this;
+
+              // If the following property in this component's state has a value, try to get the unfollow
+              // method while referencing the user in question and set the value of the following property to
+              // its oppisite (false in this case)
 
               if (!_this.state.following) {
                 _context.next = 16;
@@ -1784,12 +1803,12 @@ var Profile = function (_Component) {
               return _axios2.default.get("/api/user/" + match.params.id + "/unfollow");
 
             case 6:
-              userProfile = _context.sent;
+              followSwitch = _context.sent;
 
               self.setState({
                 following: !self.state.following
               });
-              console.log(userProfile.data);
+              console.log(followSwitch.data); // Console log of the data in the userProfile property
               _context.next = 14;
               break;
 
@@ -1797,7 +1816,7 @@ var Profile = function (_Component) {
               _context.prev = 11;
               _context.t0 = _context["catch"](3);
 
-              console.log(_context.t0);
+              console.log(_context.t0); // Console log any errors should they arise
 
             case 14:
               _context.next = 27;
@@ -1809,12 +1828,12 @@ var Profile = function (_Component) {
               return _axios2.default.get("/api/user/" + match.params.id + "/follow");
 
             case 19:
-              _userProfile = _context.sent;
+              _followSwitch = _context.sent;
 
               self.setState({
                 following: !self.state.following
               });
-              console.log(_userProfile.data);
+              console.log(_followSwitch.data); // Console log of the data in the userProfile property
               _context.next = 27;
               break;
 
@@ -1822,7 +1841,7 @@ var Profile = function (_Component) {
               _context.prev = 24;
               _context.t1 = _context["catch"](16);
 
-              console.log(_context.t1);
+              console.herelog(_context.t1); // Console log any errors should they arise
 
             case 27:
             case "end":
@@ -1833,7 +1852,7 @@ var Profile = function (_Component) {
     }));
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
@@ -1841,13 +1860,16 @@ var Profile = function (_Component) {
   (0, _createClass3.default)(Profile, [{
     key: "componentWillMount",
     value: function componentWillMount() {
+      // Create the 3 route props from the routeProps passed down from Router
       var _props$routeProps = this.props.routeProps,
           match = _props$routeProps.match,
           location = _props$routeProps.location,
           history = _props$routeProps.history;
+      // Store a reference to this class into a variable 
 
       var self = this;
 
+      // Function to retrieve user data
       var getUser = function () {
         var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2() {
           var userProfile;
@@ -1862,13 +1884,14 @@ var Profile = function (_Component) {
                 case 3:
                   userProfile = _context2.sent;
 
-                  console.log(userProfile);
+                  console.log(userProfile); // Console log to check retrieved data
+                  // Set the relevant app and user data to the state
                   self.setState({
                     initialData: self.props.initialData,
                     userProfile: userProfile.data.user[0],
                     following: userProfile.data.following
                   }, function () {
-                    console.log(self.state);
+                    console.log(self.state); // Console log the state to check it after it's been updated
                   });
                   _context2.next = 11;
                   break;
@@ -1877,7 +1900,7 @@ var Profile = function (_Component) {
                   _context2.prev = 8;
                   _context2.t0 = _context2["catch"](0);
 
-                  console.log(_context2.t0);
+                  console.log(_context2.t0); // Catch any errors if necessary
 
                 case 11:
                 case "end":
@@ -1891,11 +1914,17 @@ var Profile = function (_Component) {
           return _ref2.apply(this, arguments);
         };
       }();
-      getUser();
+      getUser(); // Actual call to the the function
     }
+
+    // This function contains both the follow and unfollow methods from the User controller.
+
   }, {
     key: "render",
     value: function render() {
+      // If there is a value in the userProfile property of the state, pull necessary values
+      // from that property with a destructuring expression and return the JSX for the
+      // user profile info page.
       if (this.state.userProfile !== undefined) {
         var _state$userProfile = this.state.userProfile,
             first_name = _state$userProfile.first_name,
@@ -1986,17 +2015,20 @@ var SearchHeader = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (SearchHeader.__proto__ || Object.getPrototypeOf(SearchHeader)).call(this));
 
     _this.clickedBtn = function () {
-      console.log("swag");
+      console.log("clicked!");
     };
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
 
   (0, _createClass3.default)(SearchHeader, [{
     key: "render",
+
+
+    // Simple component for the search bar and notifications in the header area
     value: function render() {
       return _react2.default.createElement(
         "div",
@@ -2137,19 +2169,22 @@ var Layout = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
 
     _this.clickedBtn = function () {
-      console.log("swag");
+      console.log("clicked!");
     };
 
     _this.state = {
-      name: "Joe"
+      name: "Tracy"
     };
     return _this;
   }
+  // Declarations that need to be made before the first render are placed in this function.
+  // Props and initial state are accessible at this point.
+
 
   (0, _createClass3.default)(Layout, [{
     key: "componentWillMount",
     value: function componentWillMount() {
-      var self = this;
+      var self = this; // Setting a reference to the class in a variable
       var getInitialData = function () {
         var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
           var initialData;
@@ -2165,18 +2200,20 @@ var Layout = function (_Component) {
                   initialData = _context.sent;
 
 
+                  // Store the data from initialApp into the state
                   self.setState({
                     initialData: initialData.data
                   }, function () {
-                    console.log(self.state);
+                    console.log(self.state); // Console log of the state after storing data pulled via axios
                   });
+                  // Going to look into this return statement to see if it's necessary
                   return _context.abrupt("return", initialData.data);
 
                 case 8:
                   _context.prev = 8;
                   _context.t0 = _context["catch"](0);
 
-                  console.log(_context.t0);
+                  console.log(_context.t0); // Standard error catching if there's any issues
 
                 case 11:
                 case "end":
@@ -2190,10 +2227,14 @@ var Layout = function (_Component) {
           return _ref.apply(this, arguments);
         };
       }();
-      getInitialData();
+      getInitialData(); // calling the function
     }
+    // Function to expand on for a custom clickable button in the future
+
   }, {
     key: "render",
+
+    // Where the main content to be displayed is written
     value: function render() {
       var _this2 = this;
 
@@ -2203,8 +2244,10 @@ var Layout = function (_Component) {
         _react2.default.createElement(
           "div",
           { className: "app-container home-page" },
-          _react2.default.createElement(_LoadingComp2.default, {
-            initialData: this.state.initialData == undefined ? "loading" : this.state.initialData
+          _react2.default.createElement(_LoadingComp2.default
+          // This conditional causes a loading element to appear over the actual
+          // app until it initialData is populated with a value other than "loading"
+          , { initialData: this.state.initialData == undefined ? "loading" : this.state.initialData
           }),
           _react2.default.createElement(_LeftMenu2.default, {
             initialData: this.state.initialData == undefined ? "loading" : this.state.initialData
