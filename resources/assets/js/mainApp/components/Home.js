@@ -5,7 +5,8 @@ import axios from "axios";
 import ComposeSection from "./ComposeSection";
 import Posts from "./Posts";
 
-// The main component for the Home Page
+// The main component for the Home page
+// The container for the Compose and Posts sections
 export default class Home extends Component {
   constructor() {
     super();

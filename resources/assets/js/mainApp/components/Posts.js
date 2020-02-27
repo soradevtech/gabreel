@@ -11,12 +11,17 @@ export default class Posts extends Component {
   clickedBtn = () => {
     console.log("clicked!");
   };
+  // This function is ultimately what displays the JSX for this component.
   showLatestPosts = () => {
+    // If there is data in the latestsPosts property, return the data with a map function 
+    // using this JSX for each item and their interpolated variable values where necessary.
     if (this.props.initialData.latestPosts != undefined) {
       return this.props.initialData.latestPosts.map((item, index) => {
         let user = item.users
         let post = item.posts
+        
         return (
+          // I need to lookup the use for this key property with the index parameter again
           <div className="update-container" key={index}>
             <div className="author-info">
               <a
@@ -29,14 +34,14 @@ export default class Posts extends Component {
               <div className="info">
                 <a href="#/profile">{`${user.first_name} ${user.last_name}`}</a>
                 shared a
-                <a href="#">{post.type == "text" ? "story" : "image"}</a>
+                <a href="#">{`${post.type == "text" ? "story" : "image"}`}</a>
               </div>
             </div>
             <div className="media">
               <div
                 className={`${post.type == "text" ? "story" : "image"}`}
                 style={{
-                  background: 'url("https://images.tre-marshall.com/gabreel/inspiration.jpg")',
+                  backgroundImage: `url('https://images.tre-marshall.com/gabreel/inspiration.jpg')`,
                   backgroundPosition: "center center",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover"
@@ -79,6 +84,7 @@ export default class Posts extends Component {
     }
   };
   render() {
+    // Return the results from showLatestPosts()
     return <section id="posts">{this.showLatestPosts()}</section>;
   }
 }

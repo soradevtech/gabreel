@@ -88,7 +88,7 @@ var ComposeSection = function (_Component) {
               _context.prev = 7;
               _context.t0 = _context["catch"](0);
 
-              console.log(_context.t0);
+              console.log(_context.t0); // Catch errors if any occur
 
             case 10:
             case "end":
@@ -110,6 +110,13 @@ var ComposeSection = function (_Component) {
     _this.state = {};
     return _this;
   }
+  // This function will try to post the submitted form data to the declared
+  // route, sending the content, user id, and post type
+  // This needs to be updated to be more dynamic when time permits
+
+  // This is an axios function that updates the state with user input from the
+  // target element via the onChange attribute
+
 
   (0, _createClass3.default)(ComposeSection, [{
     key: "render",
@@ -122,8 +129,11 @@ var ComposeSection = function (_Component) {
           id: true,
           cols: 80,
           rows: 8,
-          defaultValue: "",
-          onChange: this.handleChange, value: this.state.post_content
+          defaultValue: ""
+          // The value attribute is automatically updated through the state, which is
+          // updated by the handleChange function in the onChange attribute in the
+          // same element (phew!)
+          , onChange: this.handleChange, value: this.state.post_content
         }),
         _react2.default.createElement("div", { className: "user-img" }),
         _react2.default.createElement(
@@ -204,111 +214,117 @@ var Posts = function (_Component) {
     };
 
     _this.showLatestPosts = function () {
+      // If there is data in the latestsPosts property, return the data with a map function 
+      // using this JSX for each item and their interpolated variable values where necessary.
       if (_this.props.initialData.latestPosts != undefined) {
         return _this.props.initialData.latestPosts.map(function (item, index) {
           var user = item.users;
           var post = item.posts;
-          return _react2.default.createElement(
-            "div",
-            { className: "update-container", key: index },
+
+          return (
+            // I need to lookup the use for this key property with the index parameter again
             _react2.default.createElement(
               "div",
-              { className: "author-info" },
-              _react2.default.createElement("a", {
-                href: "#",
-                className: "user-img",
-                style: {
-                  backgroundImage: "url('" + user.profile_img + "')"
-                }
-              }),
+              { className: "update-container", key: index },
               _react2.default.createElement(
                 "div",
-                { className: "info" },
-                _react2.default.createElement(
-                  "a",
-                  { href: "#/profile" },
-                  user.first_name + " " + user.last_name
-                ),
-                "shared a",
-                _react2.default.createElement(
-                  "a",
-                  { href: "#" },
-                  post.type == "text" ? "story" : "image"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "media" },
-              _react2.default.createElement("div", {
-                className: "" + (post.type == "text" ? "story" : "image"),
-                style: {
-                  background: 'url("https://images.tre-marshall.com/gabreel/inspiration.jpg")',
-                  backgroundPosition: "center center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover"
-                }
-              })
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "padding-container" },
-              _react2.default.createElement(
-                "div",
-                { className: "grey-container" },
+                { className: "author-info" },
+                _react2.default.createElement("a", {
+                  href: "#",
+                  className: "user-img",
+                  style: {
+                    backgroundImage: "url('" + user.profile_img + "')"
+                  }
+                }),
                 _react2.default.createElement(
                   "div",
-                  { className: "update-info" },
+                  { className: "info" },
                   _react2.default.createElement(
-                    "h3",
-                    null,
-                    "How to become a developer?"
+                    "a",
+                    { href: "#/profile" },
+                    user.first_name + " " + user.last_name
                   ),
+                  "shared a",
                   _react2.default.createElement(
-                    "p",
-                    null,
-                    post.content
+                    "a",
+                    { href: "#" },
+                    "" + (post.type == "text" ? "story" : "image")
                   )
-                ),
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "media" },
+                _react2.default.createElement("div", {
+                  className: "" + (post.type == "text" ? "story" : "image"),
+                  style: {
+                    backgroundImage: "url('https://images.tre-marshall.com/gabreel/inspiration.jpg')",
+                    backgroundPosition: "center center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                  }
+                })
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "padding-container" },
                 _react2.default.createElement(
                   "div",
-                  { className: "update-stats" },
+                  { className: "grey-container" },
                   _react2.default.createElement(
                     "div",
-                    { className: "icon-section" },
+                    { className: "update-info" },
                     _react2.default.createElement(
-                      "div",
-                      { className: "like-circle" },
-                      _react2.default.createElement("i", { className: "fas fa-thumbs-up" })
+                      "h3",
+                      null,
+                      "How to become a developer?"
+                    ),
+                    _react2.default.createElement(
+                      "p",
+                      null,
+                      post.content
                     )
                   ),
                   _react2.default.createElement(
                     "div",
-                    { className: "other-users" },
-                    "Sarah Russel and 23 others liked update"
-                  ),
-                  _react2.default.createElement(
-                    "div",
-                    { className: "comments-stats" },
-                    "4 Comments"
-                  )
-                ),
-                _react2.default.createElement(
-                  "div",
-                  { className: "compose-comment" },
-                  _react2.default.createElement("textarea", { name: true, id: true, cols: 80, rows: 8, defaultValue: "" }),
-                  _react2.default.createElement(
-                    "div",
-                    { className: "buttons" },
+                    { className: "update-stats" },
                     _react2.default.createElement(
                       "div",
-                      { className: "repost-btn" },
-                      _react2.default.createElement("i", { className: "fas fa-redo" })
+                      { className: "icon-section" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "like-circle" },
+                        _react2.default.createElement("i", { className: "fas fa-thumbs-up" })
+                      )
                     ),
                     _react2.default.createElement(
                       "div",
-                      { className: "like-btn" },
-                      _react2.default.createElement("i", { className: "fas fa-thumbs-up" })
+                      { className: "other-users" },
+                      "Sarah Russel and 23 others liked update"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "comments-stats" },
+                      "4 Comments"
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { className: "compose-comment" },
+                    _react2.default.createElement("textarea", { name: true, id: true, cols: 80, rows: 8, defaultValue: "" }),
+                    _react2.default.createElement(
+                      "div",
+                      { className: "buttons" },
+                      _react2.default.createElement(
+                        "div",
+                        { className: "repost-btn" },
+                        _react2.default.createElement("i", { className: "fas fa-redo" })
+                      ),
+                      _react2.default.createElement(
+                        "div",
+                        { className: "like-btn" },
+                        _react2.default.createElement("i", { className: "fas fa-thumbs-up" })
+                      )
                     )
                   )
                 )
@@ -324,10 +340,13 @@ var Posts = function (_Component) {
     };
     return _this;
   }
+  // This function is ultimately what displays the JSX for this component.
+
 
   (0, _createClass3.default)(Posts, [{
     key: "render",
     value: function render() {
+      // Return the results from showLatestPosts()
       return _react2.default.createElement(
         "section",
         { id: "posts" },
@@ -392,7 +411,8 @@ var _Posts2 = _interopRequireDefault(_Posts);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// The main component for the Home Page
+// The main component for the Home page
+// The container for the Compose and Posts sections
 var Home = function (_Component) {
   (0, _inherits3.default)(Home, _Component);
 
@@ -497,14 +517,19 @@ var LeftMenu = function (_Component) {
     };
 
     _this.state = {
-      dropdown: false
+      dropdown: false // Dropdown has a default state of false
     };
     return _this;
   }
 
+  // This function simply reverses the boolean value of the dropdown menu
+  // to make it visible or not.
+
+
   (0, _createClass3.default)(LeftMenu, [{
     key: "render",
     value: function render() {
+      // Return a div to indicate the data is loading if it needs time
       if (this.props.initialData.userInfo == undefined) {
         return _react2.default.createElement(
           "div",
@@ -512,6 +537,7 @@ var LeftMenu = function (_Component) {
           "Loading"
         );
       } else {
+        // Else return the content with interpolated values from the props
         var _props$initialData$us = this.props.initialData.userInfo,
             first_name = _props$initialData$us.first_name,
             last_name = _props$initialData$us.last_name;
@@ -1955,6 +1981,7 @@ var Profile = function (_Component) {
           )
         );
       } else {
+        // Else return the loading div element until the userProfile data loads
         return _react2.default.createElement(
           "div",
           { className: "content-area profile-page" },

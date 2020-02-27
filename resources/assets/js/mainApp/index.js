@@ -98,6 +98,7 @@ class Layout extends Component {
               />
             </div>
           </section>
+          {/* Messenger component */}
           <Messenger />
         </div>
       </Router>

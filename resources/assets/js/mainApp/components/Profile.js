@@ -110,6 +110,7 @@ export default class Profile extends Component {
         </div>
       );
     } else {
+      // Else return the loading div element until the userProfile data loads
       return <div className="content-area profile-page">Loading</div>;
     }
   }
