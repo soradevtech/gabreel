@@ -37,13 +37,13 @@ gulp.task('styles', () => {
 })
 
 // Settings for browser-sync any time it's called.
-// Also a local server for the front end. 
+// Also a local server for the front end(?). 
 // The back end is served by the AdonisJS server.
 gulp.task('browser-sync', ['styles'], function () {
   // THIS IS FOR SITUATIONS WHEN YOU HAVE ANOTHER SERVER RUNNING
   browserSync.init({
     proxy: {
-      target: 'localhost:3333', // can be [virtual host, sub-directory, localhost with port]
+      target: 'localhost:3000', // can be [virtual host, sub-directory, localhost with port]
       ws: true // enables websockets
     },
     notify: false,
@@ -54,7 +54,7 @@ gulp.task('browser-sync', ['styles'], function () {
   // browserSync.init({
   //       server: './public',
   //       notify: false,
-  //       open: false //change this to true if you want the broser to open automatically 
+  //       open: false //change this to true if you want the browser to open automatically 
   //   });
 })
 
