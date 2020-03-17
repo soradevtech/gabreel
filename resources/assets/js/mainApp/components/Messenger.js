@@ -676,7 +676,7 @@ export default class Messenger extends Component {
             </div>
           </div>
           <div className="search">
-            <input type="text" name defaultValue placeholder="Search" />
+            <input type="text" name="defaultValue" placeholder="Search" />
           </div>
         </section>
     );

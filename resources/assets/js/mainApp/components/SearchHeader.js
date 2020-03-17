@@ -17,7 +17,7 @@ export default class SearchHeader extends Component {
     return (
       <div className="search-header">
             <div className="search-box">
-              <input type="text" name defaultValue />
+              <input type="text" name="defaultValue" />
               <div className="icon-section">
                 <div className="noti">
                   <i className="fas fa-bell" />

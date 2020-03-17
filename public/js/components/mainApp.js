@@ -1721,7 +1721,7 @@ var Messenger = function (_Component) {
         _react2.default.createElement(
           "div",
           { className: "search" },
-          _react2.default.createElement("input", { type: "text", name: true, defaultValue: true, placeholder: "Search" })
+          _react2.default.createElement("input", { type: "text", name: "defaultValue", placeholder: "Search" })
         )
       );
     }
@@ -2063,7 +2063,7 @@ var SearchHeader = function (_Component) {
         _react2.default.createElement(
           "div",
           { className: "search-box" },
-          _react2.default.createElement("input", { type: "text", name: true, defaultValue: true }),
+          _react2.default.createElement("input", { type: "text", name: "defaultValue" }),
           _react2.default.createElement(
             "div",
             { className: "icon-section" },
