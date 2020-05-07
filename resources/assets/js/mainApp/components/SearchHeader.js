@@ -19,7 +19,7 @@ export default class SearchHeader extends Component {
             <div className="search-box">
               <input type="text" name="defaultValue" />
               <div className="icon-section">
-                <div className="noti">
+                {/* <div className="noti">
                   <i className="fas fa-bell" />
                   <div className="noti-number active">9+</div>
                 </div>
@@ -30,7 +30,7 @@ export default class SearchHeader extends Component {
                 <div className="user">
                   <i className="fas fa-user" />
                   <div className="noti-number active">3</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

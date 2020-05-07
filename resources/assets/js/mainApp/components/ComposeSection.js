@@ -55,12 +55,12 @@ export default class ComposeSection extends Component {
         />
         <div className="user-img" />
         <div className="buttons">
-          <div className="button photo-btn">
+          {/* <div className="button photo-btn">
             <i className="fas fa-camera-retro" />
           </div>
           <div className="button video-btn">
             <i className="fas fa-video" />
-          </div>
+          </div> */}
           {/* This div button calls submitForm() */}
           <div className="button send-btn" onClick={this.submitForm}>
             <i className="fas fa-paper-plane" />

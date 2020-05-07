@@ -141,16 +141,6 @@ var ComposeSection = function (_Component) {
           { className: "buttons" },
           _react2.default.createElement(
             "div",
-            { className: "button photo-btn" },
-            _react2.default.createElement("i", { className: "fas fa-camera-retro" })
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "button video-btn" },
-            _react2.default.createElement("i", { className: "fas fa-video" })
-          ),
-          _react2.default.createElement(
-            "div",
             { className: "button send-btn", onClick: this.submitForm },
             _react2.default.createElement("i", { className: "fas fa-paper-plane" })
           )
@@ -813,17 +803,12 @@ var Messenger = function (_Component) {
           _react2.default.createElement(
             "div",
             { className: "messenger-icon" },
-            _react2.default.createElement("i", { className: "fas fa-comments" })
+            _react2.default.createElement("i", { className: "fas fa-address-book" })
           ),
           _react2.default.createElement(
             "div",
             { className: "title" },
-            "Messenger"
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "options-icon" },
-            _react2.default.createElement("i", { className: "fas fa-ellipsis-v" })
+            "Following"
           )
         ),
         _react2.default.createElement(
@@ -938,59 +923,7 @@ var Messenger = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "user active" },
-              _react2.default.createElement("div", {
-                className: "user-img",
-                style: {
-                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
-                  backgroundPosition: "center center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  borderRadius: "50%",
-                  height: "30px",
-                  width: "30px"
-                }
-              }),
-              _react2.default.createElement(
-                "div",
-                { className: "username" },
-                "James Doe"
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "conversation" },
-                _react2.default.createElement("i", { className: "fas fa-comment-dots" })
-              )
-            ),
-            _react2.default.createElement(
-              "div",
               { className: "user" },
-              _react2.default.createElement("div", {
-                className: "user-img",
-                style: {
-                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
-                  backgroundPosition: "center center",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                  borderRadius: "50%",
-                  height: "30px",
-                  width: "30px"
-                }
-              }),
-              _react2.default.createElement(
-                "div",
-                { className: "username" },
-                "James Doe"
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "conversation" },
-                _react2.default.createElement("i", { className: "fas fa-comment-dots" })
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "user active" },
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
@@ -1068,7 +1001,59 @@ var Messenger = function (_Component) {
             ),
             _react2.default.createElement(
               "div",
-              { className: "user active" },
+              { className: "user" },
+              _react2.default.createElement("div", {
+                className: "user-img",
+                style: {
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  borderRadius: "50%",
+                  height: "30px",
+                  width: "30px"
+                }
+              }),
+              _react2.default.createElement(
+                "div",
+                { className: "username" },
+                "James Doe"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "conversation" },
+                _react2.default.createElement("i", { className: "fas fa-comment-dots" })
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "user" },
+              _react2.default.createElement("div", {
+                className: "user-img",
+                style: {
+                  background: 'url("https://images.tre-marshall.com/gabreel/user-img.jpg")',
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  borderRadius: "50%",
+                  height: "30px",
+                  width: "30px"
+                }
+              }),
+              _react2.default.createElement(
+                "div",
+                { className: "username" },
+                "James Doe"
+              ),
+              _react2.default.createElement(
+                "div",
+                { className: "conversation" },
+                _react2.default.createElement("i", { className: "fas fa-comment-dots" })
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "user" },
               _react2.default.createElement("div", {
                 className: "user-img",
                 style: {
@@ -2064,40 +2049,7 @@ var SearchHeader = function (_Component) {
           "div",
           { className: "search-box" },
           _react2.default.createElement("input", { type: "text", name: "defaultValue" }),
-          _react2.default.createElement(
-            "div",
-            { className: "icon-section" },
-            _react2.default.createElement(
-              "div",
-              { className: "noti" },
-              _react2.default.createElement("i", { className: "fas fa-bell" }),
-              _react2.default.createElement(
-                "div",
-                { className: "noti-number active" },
-                "9+"
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "comments" },
-              _react2.default.createElement("i", { className: "fas fa-comment" }),
-              _react2.default.createElement(
-                "div",
-                { className: "noti-number active" },
-                "3"
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "user" },
-              _react2.default.createElement("i", { className: "fas fa-user" }),
-              _react2.default.createElement(
-                "div",
-                { className: "noti-number active" },
-                "3"
-              )
-            )
-          )
+          _react2.default.createElement("div", { className: "icon-section" })
         )
       );
     }
