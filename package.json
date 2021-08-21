@@ -1,5 +1,5 @@
 {
-  "name": "gabreel",
+  "name": "GabReel",
   "version": "4.1.0",
   "adonis-version": "4.1.0",
   "description": "This is a social network built with AdonisJs",
@@ -18,8 +18,8 @@
     "adonisjs",
     "adonis-app"
   ],
-  "author": "Tracy Marshall",
-  "license": "MIT",
+  "author": "",
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "@adonisjs/ace": "^5.0.8",
@@ -63,7 +63,6 @@
     "redux": "^3.6.0",
     "sass-loader": "^6.0.3",
     "standard": "^10.0.2",
-    "url-parse": "^1.4.7",
     "webpack": "^2.5.1",
     "webpack-stream": "^5.2.1"
   },
@@ -74,8 +73,5 @@
   },
   "autoload": {
     "App": "./app"
-  },
-  "engines": {
-    "node": "10.17.0"
   }
 }

@@ -1,5 +1,5 @@
 @layout('layouts/empty')
-{{--  The template to register an account on this site.  --}}
+
 @section('title')
 GabReel - Register
 @endsection
@@ -18,12 +18,10 @@ GabReel - Register
         <form action="/register" method="POST" class="default-form">
             {{csrfField()}}
             <div class="error-box
-            {{--  Checks for errors in the email or password  --}}
             @if(hasErrorFor('email') || hasErrorFor('password'))
                 active
             @endif
             ">
-            {{--  AdonisJS does return error messages for  the below field/data types  --}}
             @if(hasErrorFor('email'))
                 {{ getErrorFor('email')}}
             @endif
@@ -42,7 +40,6 @@ GabReel - Register
                 @endif
             ">
         </div>
-        {{--  This password field checks for errors and inconsistences per the framework functionality  --}}
         <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" name="password" value="" class="text 

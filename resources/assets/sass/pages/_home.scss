@@ -7,14 +7,15 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  background: $blue;
+  background: $darksideBlue;
   z-index: 20;
-  transition: all 0.6s ease-in-out 0.5s;
+  transition: all .6s ease-in-out .5s;
 
   &.active {
     transform: translate3d(0, 0, 0);
   }
   .loading-icon {
+    
   }
   .loading-text {
     font-size: 3rem;
@@ -194,7 +195,7 @@
       position: relative;
 
       .user-img {
-        background: url("https://images.tre-marshall.com/gabreel/user-img.jpg");
+        background: url("/img/user-img-2.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -227,11 +228,11 @@
 
           &.send-btn {
             color: white;
-            background: rgb(63, 147, 255);
+            background: rgb(50, 174, 255);
             background: linear-gradient(
-              311deg,
-              rgba(63, 147, 255, 1) 16%,
-              rgba(161, 255, 139, 1) 100%
+              163deg,
+              rgba(50, 174, 255, 1) 4%,
+              rgba(1, 120, 255, 1) 78%
             );
           }
           .fa-paper-plane {
@@ -252,7 +253,7 @@
         padding: 0 15px;
         .user-img {
           display: inline-block;
-          background: url(https://images.tre-marshall.com/gabreel/user-img.jpg);
+          background: url(img/user-img.png);
           background-position: center center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -334,12 +335,7 @@
               font-size: 0.6rem;
               color: white;
               border-radius: 50%;
-              background: rgb(63, 147, 255);
-              background: linear-gradient(
-                311deg,
-                rgba(63, 147, 255, 1) 16%,
-                rgba(161, 255, 139, 1) 100%
-              );
+              background: linear-gradient(163deg, #32aeff 4%, #0178ff 78%);
               .fa-thumbs-up {
                 position: relative;
                 top: -1px;
@@ -374,7 +370,7 @@
             z-index: 2;
             border: none;
             height: 40px;
-            width: 80%;
+            width: 100%;
             border-radius: 20px;
             box-shadow: $boxshadowbtns;
           }
@@ -395,12 +391,7 @@
             .like-btn {
               height: 40px;
               width: 40px;
-              background: rgb(63, 147, 255);
-              background: linear-gradient(
-                311deg,
-                rgba(63, 147, 255, 1) 16%,
-                rgba(161, 255, 139, 1) 100%
-              );
+              background: linear-gradient(163deg, #32aeff 4%, #0178ff 78%);
               box-shadow: $boxshadowbtns;
               color: white;
               display: flex;
@@ -428,11 +419,10 @@
       display: flex;
       box-shadow: 0 2px 15px -3px #1b1b1b;
       height: 53.33;
-      background: rgb(108, 196, 108);
       background: linear-gradient(
-        90deg,
-        rgba(108, 196, 108, 1) 0%,
-        rgba(137, 239, 137, 1) 100%
+        to right,
+        rgba(1, 120, 255, 1) 0%,
+        rgba(50, 173, 255, 1) 100%
       );
       font-size: 1.2rem;
       padding: 10px 0;
@@ -466,7 +456,6 @@
     }
     .users {
       // padding: 20px 15px;
-      background: #89ef89;
       height: calc(800px - 131.33px);
       overflow: hidden;
 
@@ -515,7 +504,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          color: #111111;
+          color: #99ccff;
           font-weight: 300;
           font-size: 0.9rem;
         }
@@ -535,7 +524,7 @@
 
       input[type="text"] {
         width: 100%;
-        background: #6cc46c;
+        background: $searchInputBG;
         border: none;
         border-radius: 25px;
         font-size: 1rem;

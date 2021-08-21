@@ -5,21 +5,17 @@ import axios from "axios";
 import ComposeSection from "./ComposeSection";
 import Posts from "./Posts";
 
-// The main component for the Home page
-// The container for the Compose and Posts sections
 export default class Home extends Component {
   constructor() {
     super();
     this.state = {
-      name: "Tracy"
+      name: "Joe"
     };
   }
   componentWillMount() {
     this.setState(
       {
-        // Passing value of initialData from props into this component's state
-        // Is this simply overwriting the main component's state??
-        initialData: this.props.initialData 
+        initialData: this.props.initialData
       },
       () => {
         console.log(this.props);
@@ -27,7 +23,7 @@ export default class Home extends Component {
     );
   }
   clickedBtn = () => {
-    console.log("clicked!");
+    console.log("swag");
   };
   render() {
     return (

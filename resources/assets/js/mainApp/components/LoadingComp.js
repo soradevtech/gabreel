@@ -9,10 +9,6 @@ export default class LoadingComp extends Component {
     };
   }
 
-  // This component is the element that displays while the app is loading.
-  // It will be active until initialData does not have a value of "loading".
-  // Any other value in initialData will remove the "active" class from 
-  // this component.
   render() {
     return (
       <section

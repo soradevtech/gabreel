@@ -1,6 +1,5 @@
 @layout('layouts/empty')
 
-{{--  This is the welcome splash page that for anyone not logged in  --}}
 @section('title')
 GabReel - Social Network
 @endsection
@@ -10,7 +9,7 @@ GabReel - Social Network
 @endsection
 
 @section('custom-style-app-container')
-  background: url('https://images.tre-marshall.com/gabreel/nepal-hillside.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;
+  background: url('/resources/nepal-hillside.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;
 @endsection
 
 @section('content')
@@ -21,7 +20,7 @@ GabReel - Social Network
     <div class="home-container">
       <div class="box">
     
-    {{--  Will add Facebook and Google login functionality soon. Only the email login works currently.  --}}
+    
     <div class="login-buttons">
       <div class="button google-btn">
         Google
@@ -36,7 +35,6 @@ GabReel - Social Network
     </div>
   </div>
   </div>
-  {{--  Where the react loads in for the welcome page  --}}
   <script src="/js/components/vendor.js"></script>
     <script src="/js/components/firstComp.js"></script>
   </body>

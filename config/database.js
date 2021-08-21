@@ -6,10 +6,6 @@ const Env = use('Env')
 /** @type {import('@adonisjs/ignitor/src/Helpers')} */
 const Helpers = use('Helpers')
 
-/** @type Import ClearDB URL parser for Heroku hosting */
-const Url = require('url-parse')
-const CLEARDB_ONYX_URL = new Url(Env.get('CLEARDB_ONYX_URL')) 
-
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -21,8 +17,6 @@ module.exports = {
   |
   */
   connection: Env.get('DB_CONNECTION', 'sqlite'),
-
-  
 
   /*
   |--------------------------------------------------------------------------
@@ -55,27 +49,14 @@ module.exports = {
   */
   mysql: {
     client: 'mysql',
-
-    // Holding onto this object as it was here when the project worked locally.
-    // This was here before I posted to Heroku.
-    // connection: {
-    //   host: Env.get('DB_HOST', 'localhost'),
-    //   port: Env.get('DB_PORT', ''),
-    //   user: Env.get('DB_USER', 'root'),
-    //   password: Env.get('DB_PASSWORD', ''),
-    //   database: Env.get('DB_DATABASE', 'adonis')
-    // }
-
-    // New connection object for Heroku
-    // Env should look for this 
     connection: {
-      host: Env.get('DB_HOST', CLEARDB_ONYX_URL.host),
+      host: Env.get('DB_HOST', 'localhost'),
       port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', CLEARDB_ONYX_URL.username),
-      password: Env.get('DB_PASSWORD', CLEARDB_ONYX_URL.password),
-      database: Env.get('DB_DATABASE', CLEARDB_ONYX_URL.pathname.substr(1))
+      user: Env.get('DB_USER', 'root'),
+      password: Env.get('DB_PASSWORD', ''),
+      database: Env.get('DB_DATABASE', 'adonis')
     }
-  }, 
+  },
 
   /*
   |--------------------------------------------------------------------------

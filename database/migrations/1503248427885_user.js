@@ -2,12 +2,7 @@
 
 /** @type {import('@adonisjs/lucid/src/Schema')} */
 const Schema = use('Schema')
-/** @type {import('@adonisjs/framework/src/Hash')} */
 
-// This class, and all other migration classes, have an up method and a down method.
-// The up method sets up the table with the declared columns and attributes, 
-// and the down method simply drops the entire table. One migration class 
-// per table apparently.
 class UserSchema extends Schema {
   up () {
     this.create('users', (table) => {
