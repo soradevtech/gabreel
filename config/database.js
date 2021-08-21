@@ -6,6 +6,10 @@ const Env = use('Env')
 /** @type {import('@adonisjs/ignitor/src/Helpers')} */
 const Helpers = use('Helpers')
 
+// Parsing database login URL for when the project is live
+const Url = require('url-parse')
+const JAWSDB_MARIA_URL = new Url(Env.get('JAWSDB_MARIA_URL'))
+
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -50,11 +54,11 @@ module.exports = {
   mysql: {
     client: 'mysql',
     connection: {
-      host: Env.get('DB_HOST', 'localhost'),
+      host: Env.get('DB_HOST', JAWSDB_MARIA_URL.host),
       port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis')
+      user: Env.get('DB_USER', JAWSDB_MARIA_URL.username),
+      password: Env.get('DB_PASSWORD', JAWSDB_MARIA_URL.password),
+      database: Env.get('DB_DATABASE', JAWSDB_MARIA_URL.pathname.substr(1))
     }
   },
 
