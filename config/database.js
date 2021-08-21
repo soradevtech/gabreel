@@ -8,7 +8,7 @@ const Helpers = use('Helpers')
 
 // Parsing database login URL for when the project is live
 const Url = require('url-parse')
-const JAWSDB_MARIA_URL = new Url(Env.get('JAWSDB_MARIA_URL'))
+const CLEARDB_DATABASE_URL = new Url(Env.get('CLEARDB_DATABASE_URL'))
 
 module.exports = {
   /*
@@ -54,11 +54,11 @@ module.exports = {
   mysql: {
     client: 'mysql',
     connection: {
-      host: Env.get('DB_HOST', JAWSDB_MARIA_URL.host),
+      host: Env.get('DB_HOST', CLEARDB_DATABASE_URL.host),
       port: Env.get('DB_PORT', ''),
-      user: Env.get('DB_USER', JAWSDB_MARIA_URL.username),
-      password: Env.get('DB_PASSWORD', JAWSDB_MARIA_URL.password),
-      database: Env.get('DB_DATABASE', JAWSDB_MARIA_URL.pathname.substr(1))
+      user: Env.get('DB_USER', CLEARDB_DATABASE_URL.username),
+      password: Env.get('DB_PASSWORD', CLEARDB_DATABASE_URL.password),
+      database: Env.get('DB_DATABASE', CLEARDB_DATABASE_URL.pathname.substr(1))
     }
   },
 
