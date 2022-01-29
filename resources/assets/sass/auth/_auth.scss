@@ -54,11 +54,22 @@
                 color: #fff;
             }
         }
+
+        .test-login {
+            background: lightgrey;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            p {
+                text-align: center;
+            }
+        }
     }
     .side-image {
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url('/resources/pexels-photo.jpeg');
+        background-image: url('/img/side-img.jpg');
         background-size: cover;
         height: 100%;
     }

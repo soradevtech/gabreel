@@ -15,6 +15,11 @@ GabReel - Login
 @section('content')
     <div class="auth-form">
         <h1>GabReel</h1>
+        <div class="test-login">
+            <p>Test Login</p>
+            <p>email: tester@gmail.com</p>
+            <p>password: cheesecake</p>
+        </div>
         <form action="/login" method="POST" class="default-form">
         {{ csrfField() }}
         <div class="error-box
